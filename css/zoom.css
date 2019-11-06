@@ -1,0 +1,188 @@
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a:hover {
+	text-decoration-line: none;
+}
+#nav-logo {
+	position: relative;
+	top:-10px;
+}
+.oo-span {
+	margin: 0;
+	padding: 0;
+	color: #E78328;
+}
+.brand-span,.brand-span:hover {
+	color: #439939;
+	font-family: Copperplate Gothic;
+	font-weight: bold;
+}
+.nav-link:hover {
+	color: #FCA146 !important;
+	border-bottom-width: 70%;
+	border-bottom: 2px solid #FCA146;
+}
+#top-slider-content img{
+	/*height: 500px;*/
+	max-width: 1600px;
+	max-height: 80vh;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+#define-zoom {
+	font-size: 1.2em;
+}
+#uber {
+
+}
+.text-links:hover {
+	transition: ease-in-out 0.25s;
+	color: #FF9800 !important;
+	text-decoration-line: none;
+	border-bottom: 1px solid #FF9800;
+	border-bottom-width: 10%;
+}
+#section-1 {
+	background: url(../imgs/bg20.png);
+}
+.carousel-item  {
+	color: #fff;
+}
+.order-zoom {
+	font-size: 2em;
+	color: #FF9800;
+	text-shadow: 1px 1px 4px #333;
+}
+#section-3 {
+	background: url(../imgs/banner-img_4.jpg) center ; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*filter: brightness(90%);*/
+}
+#section-3 div {
+	/*font-size: 1.3em;*/
+}
+.service {
+	color: #77B72A;
+}
+#section-4 {
+	bac
+}
+#section-5 .service-btns {
+
+}
+
+#section-5 {
+	background-color: #282828;
+}
+#section-5 a{
+	text-decoration: none;
+}
+#big-smile {
+	font-size: 5em;
+	color: #80BF39;
+}
+.text-orange-alt {
+	color: #FFDB40;
+}
+.text-green-alt {
+	color: #80BF39;
+}
+.social-media-li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.social-media-li a{
+	color: #1F1E21;
+}
+.social-media-li .media-icon{
+	font-size: 115%;
+}
+
+
+#driver-signup-main {
+	height: 125vh;
+	background: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+	url(../imgs/drivers.jpg) center;
+	background-size: cover;
+}
+#driver-signup-section {
+
+}
+#form-div {
+	background-color: transparent;
+	/*border: 2px solid orange;*/
+}
+#driver-form {
+	border: 2px solid orange;
+	padding: 200px;
+}
+footer a {
+	color: black;
+}
+#bottom-footer a:hover {
+	transition: ease-in-out 0.25s;
+	color: #FF9800 !important;
+}
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#rider-signup {
+
+}
+#rider-form {
+
+	
+
+}
+#rider-dialog {
+	
+}
+#dialog-content {
+	border: 2px solid #dee2eb;
+	/*background-color: transparent;*/
+}
+<form class=" text-dark no-text-shadow" id="rider-signup">
+							<h4 class="text-orange pb-3">Sign up and start booking</h4>
+							<div class="">
+								<p>Full Name</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>Email</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>Phone Number</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>City</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<button class="btn btn-success mt-3 btn-block">Next</button>
+						</form>

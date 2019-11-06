@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="icon" href="./imgs/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/all-pro.css">
+	<link rel="stylesheet" type="text/css" href="./css/extra-responsive.css">
+	<link rel="stylesheet" type="text/css" href="./css/zoom.css">
+	<script src="./js/jquery-3.4.1.js"></script>
+	<script src="./js/all.min.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/zoom.js"></script>
+</head>
+	<body class="bg-light">
+		<nav class="navbar navbar-light navbar-expand-lg bg-white">
+			<div class="container">
+					<a href="#" class="navbar-brand flex">
+						<img src="./imgs/logo.jpg" class="img-fluid mr-1" height="60" width="60" id="nav-logo">
+						<span class="brand-span flex">
+							<span class="z-span">Z</span>
+							<span class="oo-span text-orange">OO</span>
+							M
+						</span>
+					</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu_div" id="toggle-btn">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
+	  			<div class="collapse navbar-collapse text-center" id="nav-menu_div">
+	  				<ul class="navbar-nav ml-auto">
+	  					<li class="nav-item active">
+	  						<a href="#" class="nav-link">Home</a>
+	  					</li>
+	  					<li class="nav-item " data-toggle="modal" data-target="#book-a-ride">
+	  						<a href="#" class="nav-link">Book a ride</a>
+	  					</li>
+	  					<li class="nav-item ">
+	  						<a href="./driver-signup.html" class="nav-link">Become a driver</a>
+	  					</li>
+	  					<li class="nav-item ">
+	  						<a href="#" class="nav-link">Customer Service</a>
+	  					</li>
+	  				</ul>
+	  			</div>
+			</div>
+		</nav>
+		<main class="bg-light">
+			<section id="section-1" class="py-5">
+				<div class="container">
+					<div id="top-slider" class="carousel slide" data-ride="carousel" >
+						<ol class="carousel-indicators">
+							<li data-target="#top-slider" data-slide-to="0" class="active"></li>
+							<li data-target="#top-slider" data-slide-to="1"></li>
+							<li data-target="#top-slider" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" id="top-slider-content">
+							<div class="carousel-item text-center active">
+								<div class="d-block w-100 text-shadow pb-5"  >
+									<h2>
+										Feeling a little Late?
+									</h2>
+									<span class="order-zoom">Order a Zoom</span>
+									<p>
+										sit back, relax and watch the magic happen 
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="d-block w-100 text-shadow pb-5"  >
+									<h2>
+										Wanna Earn some easy money?
+									</h2>
+									<span class="order-zoom">Register with ZOOM</span>
+									<p>
+										Set up your schedule and become your own boss
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="d-block w-100"  >
+									<div class="d-block w-100 text-shadow pb-5"  >
+									<h2>
+										Any extra Promotional content?
+									</h2>
+									<span class="order-zoom">adverts or videos</span>
+									<p>
+										Put anything here! 
+									</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#top-slider" data-slide="prev">
+							<span class="carousel-control-prev-icon "  ></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#top-slider" data-slide="next">
+							<span class="carousel-control-next-icon "  ></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="section-2" class="py-5">
+				<div class="container text-center">
+					<div class="row pb-4">
+						<div class="col">
+							<h2>What is ZOOM?</h2>
+							<p id="define-zoom">
+								<span class="font-weight-bold">ZOOM</span> is a car hailing and transportation service.
+								Think of <span id="uber" class="font-italic underline-text">Uber</span>, but with a whole new travelling experience. 
+							</p>
+						</div>
+					</div>
+					<h2 class="pb-4">Why Choose Us?</h2>
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<h3 class="service">Fast Booking</h3>
+							<p>
+								Zoom let's you book rides in seconds!
+								<span class="d-block">It's really easy to do, 
+									<a href="#" class="text-orange text-links" id="">try it out
+									</a>
+								.</span>
+							</p>
+						</div>
+						<div class="col-md-4">
+								<h3 class="service">Affordable</h3>
+								<p>
+								We give the best transport services and travel experience at affordable rates.
+								</p>
+						</div>
+						<div class="col-md-4">
+							<h3 class="service">Faster travel times</h3>
+								<p>
+								We've got the most experienced drivers that are sure to get you to your destination faster.
+								</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="section-3" class="py-5 mb-5">
+				<div class="filter">
+				</div>
+				<div class="container text-center text-white text-shadow">
+					<h1>Our coverage</h1>
+					<p><span>ZOOM</span> is operating in over 7 cities.</p>
+					<p>Check them all out <a href="#" class="text-links">here</a>
+					</p>
+					<p>Or</p>
+					<!-- Button trigger modal -->
+					 <button class="btn btn-outline-orange" data-toggle="modal" data-target="#book-a-ride">Book a ride</button>
+					
+				
+					
+					<!-- Modal -->
+				<div class="modal fade pr-0" id="book-a-ride" tabindex="-1" role="dialog" >
+				  <div class="modal-dialog " role="document" id="rider-dialog">
+				    <div class="modal-content  pt-2 pb-2" id="dialog-content">
+				      <div class="modal-header">
+				        <h3 class="modal-title text-success no-text-shadow" id="booking-title">Book a ride</h3>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body text-left border-0">
+				        <form class=" text-dark no-text-shadow" id="rider-signup">
+							<h4 class="text-orange pb-3">Sign up and start booking</h4>
+							<div class="">
+								<p>Full Name</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>Email</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>Phone Number</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>City</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+						</form>
+				      </div>
+				      <div class="modal-footer d-block border-0 pt-0">
+				      	<div class="row ">
+				      		<div class="col mb-2 ">
+				      			<!-- Button trigger modal for booking -->
+				        		<button class="btn btn-success mt-3 btn-block" data-toggle="modal" data-target="#booking">Next</button>
+				        		<!-- Modal -->
+				        		<div class="modal pr-0" id="booking" tabindex="-1" role="dialog" >
+								  <div class="modal-dialog " role="document" id="rider-dialog">
+								    <div class="modal-content  pt-4 pb-2" id="dialog-content">
+								      <div class="modal-header">
+								        <h4 class="modal-title text-orange no-text-shadow" id="booking-title">Book a ride</h4>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body text-left">
+								      	
+								        <form class=" text-dark  no-text-shadow" id="rider-form">
+											<div class="">
+												<p>Pick up location</p>
+												<div class="border btn flex">
+													<input type="text" name="" class="btn-block border-0 r-0"><i class="fa fa-rss my-auto"></i>
+												</div>
+											</div>
+											<div>
+												<p>Drop off point</p>
+												<div class="border btn flex">
+													<input type="text" name="" class="btn-block border-0 r-0"><i class="fa fa-rss my-auto"></i>
+												</div>
+											</div>
+										</form>
+								      </div>
+								      <div class="modal-footer d-block">
+								      	<div class="row ">
+								      		<div class="col-md-6 mb-2 ">
+								        		<button type="button" class="btn btn-orange btn-block py-2"  >Zoom Now</button>
+								      		</div>
+								      		<div class="col-md-6">
+								        		<button type="button" class="btn btn-success btn-block py-2">Schedule for later</button>
+								      		</div>
+								      	</div>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</div>
+			</section>
+			<section id="section-4" class="py-5 bg-light">
+				<div class="container-fluid text-center">
+					<h1 class="mb-4">At <span class="brand-span text-green-alt">ZOOM</span>, we are all about</h1>
+					<div class="row px-md-4">
+						<div class="col-md-4">
+							<i></i>
+							<h2>Safety first!</h2>
+							<p>Your <span class="text-green-alt">safety</span> is always our priority. </p>
+							<p>We've gone a long way to ensure that you always feel safe when you ZOOM. </p>
+						</div>
+						<div class="col-md-4">
+							<i></i>
+							<h2>Great Customer service</h2>
+							<p>Need <a href="#" class="text-green-alt">Help?</a>
+							</p>
+							<p>
+								We've got great listening ears. 
+								Don't hesistate to reach us about any complaints you might have.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<i></i>
+							<h2>Everyone's Happy</h2>
+							<p class="pt-2">
+								<i class="far fa-grin" id="big-smile"></i>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="section-5" class="py-5">
+				<div class="container text-center">
+					<h2 class="text-white">What are you waiting for?</h2>
+					<div class="row">
+						<div class="offset-md-2 col-md-4 offset-lg-3 col-lg-3 ">
+							<a href="./driver-signup.html" class="d-block d-md-flex">
+								<p class="w-100 btn btn-outline-orange px- service-btns">Start Zooming <i></i></p>
+							</a>
+						</div>
+						<div class="col-md-4 col-lg-3  ">
+							<a href="./driver-signup.html" class="d-block d-md-flex">
+								<p class="w-100 btn btn-outline-success service-btns">Register to drive <i></i></p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<section class="py-4 text-center text-md-left" id="top-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="mx-auto col-md-3">
+							<a href="#" class="navbar-brand flex">
+								<img src="./imgs/logo.jpg" class="img-fluid mr-1" height="60" width="60" id="nav-logo">
+								<span class="brand-span flex">
+									<span class="z-span">Z</span>
+									<span class="oo-span text-orange">OO</span>
+									M
+								</span>
+							</a>
+							<p>
+								<i></i>
+								<a href="#" class="text-links">FAQ</a>
+							</p>
+							<ul id="social-media-list" class="flex justify-content-center justify-content-md-start ml-0 pl-0">
+								<li class="social-media-li ">
+									<a href="#">
+										<i class="fab fa-facebook-f media-icon"></i>
+									</a>
+								</li>
+								<li class="social-media-li mx-2">
+									<a href="#">
+										<i class="fab fa-twitter media-icon"></i>
+									</a>
+								</li>
+								<li class="social-media-li">
+									<a href="">
+										<i class="fab fa-instagram media-icon"></i>
+									</a>
+								</li>
+								<li class="social-media-li mx-2">
+									<a href="#">
+										<i class="fab fa-linkedin-in media-icon"></i>
+									</a>
+								</li>
+								<li class="social-media-li">
+									<a href="#">
+										<i class="fab fa-youtube media-icon"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="offset-md-1 col-md-3 ">
+							<h3 class="mx-auto">About Us</h3>
+							<ul class="">
+								<li class="">
+									<i class="fas fa-map-marker-alt"></i>
+									<a href="#" class="text-links">Our coverage</a>
+								</li>
+								<li>
+									<i class="fas fa-rss"></i>
+									<a href="#" class="text-links">News</a>
+								</li>
+								<li>
+									<i class="fa fa-phone-alt"></i>
+									<a href="#" class="text-links">Contacts</a>
+								</li>
+							</ul>
+						</div>
+						<div class="offset-md-1 col-md-3">
+							<h3>Services</h3>
+							<ul>
+								<li>
+									<i class="fa fa-taxi"></i>
+									<a href="#" class="text-links" data-toggle="modal" data-target="#book-a-ride">Book a ride</a>
+								</li>
+								<li>
+									<i class="fa fa-user"></i>
+									<a href="./driver-signup.html" class="text-links">Start driving</a>
+								</li>
+								<li>
+									<i class="fas fa-handshake"></i>
+									<a href="#" class="text-links">Partnership Opportunities</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- <hr> -->
+			</section>
+			<section class="py-4" id="bottom-footer">
+				<div class="container-fluid ">
+					<div class="row flex-wrap ">
+						<div class=" col-sm-4 col-md-3 ml-5">
+							<p>© 2019 <a href="#" class="brand-span">ZOOM</a>
+							</p>
+						</div>
+						<div class="col-sm-3 offset-md-4 offset-lg-5  col-md-5 col-lg-3  flex justify-content-between">
+							<a href="#" class=" ">Privacy</a>
+							<a href="#" class=" ">Terms</a>
+							<a href="#" class=" ">Legal</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
