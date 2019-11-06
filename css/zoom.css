@@ -10,6 +10,7 @@ a:hover {
 	position: relative;
 	top:-10px;
 	max-width: 60px;
+	display: none;
 }
 .oo-span {
 	margin: 0;
