@@ -51,7 +51,7 @@ a:hover {
 	border-bottom-width: 10%;
 }
 #section-1 {
-	background: url(../imgs/bg20.png);
+	background: linear-gradient(45deg,rgba(253, 223, 70, 1) 15%, rgba(92, 216, 167, 1));
 }
 .carousel-item  {
 	color: #fff;
@@ -59,7 +59,7 @@ a:hover {
 .order-zoom {
 	font-size: 2em;
 	color: #FF9800;
-	text-shadow: 1px 1px 4px #333;
+	text-shadow: 1px 1px 2px #333;
 }
 #section-3 {
 	background: url(../imgs/banner-img_4.jpg) center ; 
@@ -130,7 +130,7 @@ a:hover {
 }
 #driver-form {
 	border: 2px solid orange;
-	padding: 200px;
+	/*padding: 200px;*/
 }
 footer a {
 	color: black;
@@ -153,10 +153,22 @@ footer a {
   text-decoration: none;
   cursor: pointer;
 }
+.special-modal-body {
+	display: flex;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+#modal-slider {
+	/*display: none;*/
+}
 #rider-signup {
 
 }
-#rider-form {
+#rider-booking {
 
 	
 
@@ -165,26 +177,9 @@ footer a {
 	
 }
 #dialog-content {
-	border: 2px solid #dee2eb;
+	border: 1px solid #dee2eb;
 	/*background-color: transparent;*/
 }
-<form class=" text-dark no-text-shadow" id="rider-signup">
-							<h4 class="text-orange pb-3">Sign up and start booking</h4>
-							<div class="">
-								<p>Full Name</p>
-								<input type="text" name="" class="btn-block">
-							</div>
-							<div>
-								<p>Email</p>
-								<input type="text" name="" class="btn-block">
-							</div>
-							<div>
-								<p>Phone Number</p>
-								<input type="text" name="" class="btn-block">
-							</div>
-							<div>
-								<p>City</p>
-								<input type="text" name="" class="btn-block">
-							</div>
-							<button class="btn btn-success mt-3 btn-block">Next</button>
-						</form>
+#booking-slider_btn:target ~ #booking-div {
+	display: block;
+}

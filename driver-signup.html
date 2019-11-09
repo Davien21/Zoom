@@ -14,14 +14,85 @@
 		<script src="./js/zoom.js"></script>
 	</head>
 	<body>
+			<div class="modal fade pr-0 px-2 px-sm-5 px-md-1" id="book-a-ride" tabindex="-1" role="dialog" >
+		  <div class="modal-dialog " role="document" id="rider-dialog">
+		    <div class="modal-content  pt-2 pb-2" id="dialog-content">
+		      <div class="modal-header">
+		        <h3 class="modal-title text-success no-text-shadow pl-sm-5" id="booking-title">Fill this Form</h3>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="special-modal-body text-left border-0 ">
+		      	<!-- This is the Entire modal slider, like a carousel -->
+		      	<div id="modal-slider" class="flex w-100" >
+		      		<!-- This is the sign up form div -->
+		      		<div id="sign-up-div" class="w-100 px-sm-5 pb-4">
+		      			<form class=" text-dark no-text-shadow " id="rider-signup">
+							<h4 class="text-orange pb-3">Sign up and start booking</h4>
+							<div class="">
+								<p>Full Name</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>Email</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>Phone Number</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+							<div>
+								<p>City</p>
+								<input type="text" name="" class="btn-block">
+							</div>
+						</form>
+						<button id="booking-slider_btn" class="btn btn-success mt-3 btn-block" >Next</button>
+		      		</div>
+		      		<!-- This is the booking form div -->
+		      		<div id="booking-div" class=" py-5 mx-2 d-none">
+		      			<form class="text-dark no-text-shadow" id="rider-booking">
+							<h2 class="text-orange pb-3">Book a ride</h2>
+
+							<div class="">
+								<p>Pick up location</p>
+								<div class="border btn flex">
+									<input type="text" name="" class="btn-block border-0 r-0"><i class="fa fa-rss my-auto"></i>
+								</div>
+							</div>
+							<div>
+								<p>Drop off point</p>
+								<div class="border btn flex">
+									<input type="text" name="" class="btn-block border-0 r-0"><i class="fa fa-rss my-auto"></i>
+								</div>
+							</div>
+						</form>
+						<div class="row ">
+				      		<div class="col-12  mt-3 ">
+				        		<button type="button" class="btn btn-orange btn-block py-2"  >Zoom Now</button>
+				      		</div>
+				      		<div class="col-12  mt-3">
+				        		<button type="button" class="btn btn-success btn-block py-2">Schedule for later</button>
+				      		</div>
+				      	</div>
+		      		</div>
+		      		
+		      	</div>
+		        
+				
+		      </div>
+		    
+		    </div>
+		</div>
+		</div>
 		<nav class="navbar navbar-light navbar-expand-xl bg-white">
 			<div class="container">
-				<a href="#" class="navbar-brand flex justify-content-center">
-					<img src="./imgs/logo.jpg" class="img-fluid mr-1 mt-1" id="logo">
-					<span class="brand-span flex my-auto">
+				<a href="./index.html" class="navbar-brand justify-content-center justify-content-md-start" >
+					<img src="./imgs/logo.jpg" class="img-fluid mr-1" id="logo">
+					<span class="brand-span">
 						<span class="z-span">Z</span>
-						<span class="oo-span text-orange">OO</span>
-						M
+						<span class="oo-span text-orange" style="margin-left: -6px;margin-right: -6px;">OO</span>
+					M
 					</span>
 				</a>
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu_div" id="toggle-btn">
@@ -33,7 +104,7 @@
 	  						<a href="./index.html" class="nav-link">Home</a>
 	  					</li>
 	  					<li class="nav-item ">
-	  						<a href="#" class="nav-link">Book a ride</a>
+	  						<a href="#" class="nav-link" data-toggle="modal" data-target="#book-a-ride">Book a ride</a>
 	  					</li>
 	  					<li class="nav-item ">
 	  						<a href="#" class="nav-link">Become a driver</a>
@@ -48,14 +119,14 @@
 		<main id="driver-signup-main">
 			<section id="driver-signup-section">
 						<div class="container " >
-							<div class="row pt-5">
-								<div class="col-md-4">
-									<h2 class="text-white text-shadow py-4 pb-2 text-center">Earn Money and have fun doing it.</h2>	
-									<p class="text-center text-orange">
+							<div class="row pt-5 justify-content-around">
+								<div class="col-md-5 ">
+									<h2 class="text-white text-shadow py-4 pb-2 text-center mr-lg-5">Earn Money and have fun doing it.</h2>	
+									<p class="text-center text-orange mr-lg-5">
 										<i class="far fa-smile-wink " id="big-smile" style="color: orange"></i>
 									</p>
 								</div>
-								<div class="offset-md-2 col-md-5 rounded " id="form-div">
+								<div class="offset-lg-1 col-md-7 col-lg-5 rounded " id="form-div">
 									<form class="p-5 text-white text-shadow" id="driver-form">
 										<h4 class="text-orange pb-3">Register to start driving</h4>
 										<div class="">
